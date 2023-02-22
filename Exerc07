@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+  
+  int nivel;
+  float horas, salario;
+   
+  printf ("Qual seu nivel como professor? 1~3 ");
+  scanf ("%i", &nivel);
+
+  if (nivel > 4 || nivel < 1){
+    printf ("Nivel de professor nao encontrado");
+  }
+    
+  else {
+  printf ("Quantas horas trabalhadas? ");
+  scanf ("%f", &horas);
+
+  switch (nivel){
+    case 1 :
+    salario = 12 * horas;
+    printf ("Seu salario sera de %.2f", salario);
+    break;
+
+    case 2 :
+    salario = 17 * horas;
+    printf ("Seu salario sera de %.2f", salario);
+    break;
+
+    case 3 :
+    salario = 25 * horas;
+    printf ("Seu salario sera de %.2f", salario);
+    break;
+  }
+}
+  
+  return 0;
+}

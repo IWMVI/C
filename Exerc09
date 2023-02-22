@@ -1,0 +1,37 @@
+// Faça um algoritmo que leia um número e
+// mostre uma mensagem indicando se este número 
+// é par ou ímpar e se é positivo ou negativo. 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+
+  int num, par, impar;
+  char positivo, negativo;
+
+  printf ("Digite um numero qualquer: ");
+  scanf ("%i", &num);
+  printf ("\n");
+
+  if (num % 2 != 0) {
+    if (num > 0) {
+      printf ("Número ímpar positivo \n");
+    }
+    else {
+      printf ("Número ímpar negativo \n");
+    }
+  }
+  
+  if (num % 2 == 0){
+    if (num > 0){
+      printf ("Número par positivo");
+    }
+    else {
+     printf ("Número par negativo"); 
+    }
+  }
+
+  return 0;
+  
+}

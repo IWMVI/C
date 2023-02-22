@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+
+  int vet[5], i, j;
+  float media;
+
+  for (i = 1; i<= 4; i++){
+    printf ("Digite a %iª nota: ", i);
+    scanf ("%i", &vet[i]);
+
+    vet[i] = j;
+    media = (vet[i]+j)/4;
+  }
+  
+  printf ("\n");
+  printf ("A média é: %.2f", media);
+  
+  return 0;
+}

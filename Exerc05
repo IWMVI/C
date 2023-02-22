@@ -1,0 +1,35 @@
+// Elabore um algoritmo para ler 4 notas de um aluno (de
+// 1 a 10). Após calular a média das notas, apresentar a
+// mensagem "Aprovado" se o aluno conseguiu obter uma
+// nota amior ou igual a 6, caso contrário, apresente 
+// "Reprovado".
+
+
+##include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+
+	float n1, n2, n3, n4, media;
+
+	printf ("Qual a 1ª nota? ");
+	scanf ("%f",& n1);
+	printf ("Qual a 2ª nota? ");
+	scanf ("%f",& n2);
+	printf ("Qual a 3ª nota? ");
+	scanf ("%f",& n3);
+	printf ("Qual a 4ª nota? ");
+	scanf ("%f",& n4);
+  	printf ("\n");
+
+	media = (n1+n2+n3+n4)/4;
+
+  if (media >= 6){
+    printf ("Aprovado, com media: %.2f", media);
+  }
+  else {
+    printf ("Reprovado, com media: %.2f", media);
+  }
+
+	return 0;
+}
