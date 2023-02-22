@@ -1,64 +1,36 @@
+// Faça um algoritmo que leia um número e
+// mostre uma mensagem indicando se este número 
+// é par ou ímpar e se é positivo ou negativo. 
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int main (){
 
-	float n1, n2, n3, n4, media;
-  char gen;
+  int num;
 
-  printf ("Qual seu gênero? ");
-  scanf ("%char", &gen);
+  printf ("Digite um numero qualquer: ");
+  scanf ("%i", &num);
+  printf ("\n");
+
+  if (num % 2 != 0) {
+    if (num > 0) {
+      printf ("Número ímpar positivo \n");
+    }
+    else {
+      printf ("Número ímpar negativo \n");
+    }
+  }
   
-
-  if (gen == 'f' || gen == 'F'){
-    
-    printf ("\n");
-  	printf ("Qual a 1ª nota? ");
-  	scanf ("%f",& n1);
-  	printf ("Qual a 2ª nota? ");
-  	scanf ("%f",& n2);
-  	printf ("Qual a 3ª nota? ");
-  	scanf ("%f",& n3);
-  	printf ("Qual a 4ª nota? ");
-  	scanf ("%f",& n4);
-    printf ("\n");
-
-	media = (n1+n2+n3+n4)/4;
-
-    if (media >= 6){
-      printf ("Cara aluna, você foi aprovado com media: %.2f", media);
+  if (num % 2 == 0){
+    if (num > 0){
+      printf ("Número par positivo");
     }
     else {
-      printf ("Cara aluna, você foi reprovada com media: %.2f", media);
+     printf ("Número par negativo"); 
     }
   }
 
-  else if (gen == 'm' || gen == 'M'){
-    
-    printf ("\n");
-  	printf ("Qual a 1ª nota? ");
-  	scanf ("%f",& n1);
-  	printf ("Qual a 2ª nota? ");
-  	scanf ("%f",& n2);
-  	printf ("Qual a 3ª nota? ");
-  	scanf ("%f",& n3);
-  	printf ("Qual a 4ª nota? ");
-  	scanf ("%f",& n4);
-    printf ("\n");
-
-	media = (n1+n2+n3+n4)/4;
-
-    if (media >= 6){
-      printf ("Caro aluno, você foi aprovado com media: %.2f", media);
-    }
-    else {
-      printf ("Caro aluno, você foi reprovado com media: %.2f", media);
-    }
-  }
-
-  else {
-    printf("Erro");
-  }
-    
-	return 0;
+  return 0;
+  
 }

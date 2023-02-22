@@ -1,3 +1,9 @@
+// Altere o algoritmo anterior para que seja lido
+// do teclado, além das notas, o sexo do aluno (M ou F).
+// Se for masculino deverá ser precedido de "Caro aluno,
+// seu resultado é: ". Se for feminio deverá ser precedido
+// de "Cara aluna, seu resultado é: ".
+
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,0 +1,31 @@
+// Elabore um algoritmo que leia 5 valores inteiros
+// e apresente na tela o maior e menor deles.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+
+int i, num, maior, menor;
+
+  printf ("Digite o 1º número: ");
+  scanf("%i", &num);
+
+  maior = num;
+  menor = num;
+  
+  for (i= 1; i <= 4; i++){
+    printf ("Digite o %iº número: ", i+1);
+    scanf ("%i", &num);
+    if (num > maior)
+      maior = num;
+    else
+      menor = num;
+  }
+
+  printf ("\n");
+  printf ("O maior número digitado foi: %i \n", maior);
+  printf ("O menor número digitado foi: %i", menor);
+  
+  return 0;
+}

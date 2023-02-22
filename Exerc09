@@ -7,8 +7,7 @@
 
 int main (){
 
-  int num, par, impar;
-  char positivo, negativo;
+  int num;
 
   printf ("Digite um numero qualquer: ");
   scanf ("%i", &num);
